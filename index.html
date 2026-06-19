@@ -66,6 +66,21 @@
             flex-direction: row;
             gap: 12px;
         }            
+        .skill-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .self-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .mail-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }    
         .btn {
             display: block;
             padding: 12px;
@@ -96,7 +111,7 @@
         }
         @media screen and (max-width: 768px) {
             .container {
-            background: #8cc8ea;
+            background: #f3f0ef;
             }
             .add-container {
             display: flex;
@@ -128,12 +143,15 @@
             
             </div>
         <div class="add-container">
-        <h2>スキル</h2>
-        <ul>
+            <div class="skill-container">
+            <h2>スキル</h2>
+            <ul>
             <li>HTML</li>
             <li>CSS</li>
             <li>GitHub</li>
-        </ul>
+            </ul>
+            </div>
+            <div class="self-container">
             <h2>自己紹介表</h2>
             <table border="1">
             <tr><th>項目</th><th>内容</th></tr>
@@ -141,9 +159,12 @@
             <tr><td>出身</td><td>東京都</td></tr>
             <tr><td>趣味</td><td>読書</td></tr>
             </table>
+            </div>
+            <div class="mail-container">
             <h2>連絡先</h2>
             <p>メール：<a href="mailto:your@email.com">your@email.com</a></p>
             <p>GitHub：<a href="https://github.com/yourname" target="_blank">github.com/yourname</a></p>
+            </div>
         </div>
     </div>
 
